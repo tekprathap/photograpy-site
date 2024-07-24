@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  
+}
+.body{
+    background-color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ul-lst{
+    list-style-type: none;
+}
+.l-list{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+
+}
+.l-list a{
+    text-decoration: none;
+    color: white;
+}
+.menulist{
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    margin-top: 2px;
+}
+.menu{
+    display: none;
+    
+}
+.logo{
+    color: white;
+}
+/* homesection */
+.homesection .homecont{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* about */
+#about{
+    color: white;
+}
+#about h6::before{
+    content: "✔️";
+
+}
+/* GalleryGallery */
+#Gallery .cardimg{
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cardimg:hover{
+    filter: blur(2px);
+    
+}
+.cart{
+    background-color: aquamarine;
+    padding: 10px;
+}
+.pricicart{
+    margin: 10px;
+}
+/* iputgroup */
+.iputgroup input{
+    background: none;
+    background-color: rgb(58, 56, 56) !important;
+    color: white !important  ;
+    outline: none;
+    
+}
+.iputgroup input:focus{
+    outline: 0;
+}
+.iputgroup textarea{
+    background: none;
+    background-color: rgb(68, 67, 67) !important;
+    color: white !important ;
+    
+}
+.iputgroup.error input{
+    border: 2px solid red;
+}
+.iputgroup.success input{
+    border: 2px solid green;
+}
+.iputgroup.error textarea{
+    border: 2px solid red;
+}
+.iputgroup.iputgroup.success textarea{
+    border: 2px solid green 
+}
+.error{ 
+    color: red;
+}
+.icon i{
+    color: white;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+  
+    right: 20px;
+}
+.icon i:nth-child(1):hover{
+    color: palevioletred;
+}
+.icon i:nth-child(2):hover{
+    color: blue
+}
+/* responsviwe heade section */
+@media (max-width:800px) {
+ header{
+    flex-direction: column;
+ }
+ .ul-lst{
+    align-items: center;
+    display: none;
+ }
+ .l-list{
+    display: block;
+    align-items: center;
+ }
+ .menuactie{
+    display: block;
+ }
+ .menu{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    cursor: pointer;
+ }
+ .logo{
+    align-self: baseline;
+ }
+ 
+}
+/* responsive about */
+@media (max-width:490px) {
+    #about{
+        text-align: center;
+    }
+}
+
+/* viwe image */
+
+#model{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+#model.modelactive{
+    display: grid;
+    place-items: center;
+}
+#img{
+    max-width: 75%;
+    max-height: 55%;
+    border-radius: 10px;
+    border: 3px solid white;
+    cursor: pointer; 
+}
