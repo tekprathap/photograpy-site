@@ -57,6 +57,7 @@ header{
 /* GalleryGallery */
 #Gallery .cardimg{
     margin: 10px;
+    hight=360px;
     border-radius: 10px;
     cursor: pointer;
 }
